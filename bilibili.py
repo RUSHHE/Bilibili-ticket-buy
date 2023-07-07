@@ -16,7 +16,7 @@ if len(config["bilibili_cookies"]) == 0:
     if getcookies == "yes":
         WebDriver = webdriver.Chrome()
         WebDriver.get(
-            "https://show.bilibili.com/platform/detail.html?id=72320")
+            "https://show.bilibili.com/platform/detail.html?id=73710")
         print('=============================================')
         input("登录完成后请按任意键继续\n")
         config["bilibili_cookies"] = WebDriver.get_cookies()
@@ -29,7 +29,7 @@ if len(config["bilibili_cookies"]) == 0:
         exit(1)
 
 WebDriver = webdriver.Chrome()
-WebDriver.get("https://show.bilibili.com/platform/detail.html?id=72320")
+WebDriver.get("https://show.bilibili.com/platform/detail.html?id=73710")
 print("进入购票页面成功")
 for cookie in config["bilibili_cookies"]:
     WebDriver.add_cookie(
@@ -40,7 +40,7 @@ for cookie in config["bilibili_cookies"]:
             'path': cookie['path']
         }
     )
-WebDriver.get("https://show.bilibili.com/platform/detail.html?id=72320")
+WebDriver.get("https://show.bilibili.com/platform/detail.html?id=73710")
 
 if config["send_email"]:
     email_helper = EmailHelper(config["qq_email_config"])
@@ -50,7 +50,7 @@ while True:
     if "show.bilibili.com/platform/detail.html" in currurl:
         try:
             ticket = WebDriver.find_element(
-                By.XPATH, "//*[@id='app']/div[2]/div[2]/div[2]/div[4]/ul[1]/li[2]/div[normalize-space()='2023-05-02 周二']")  # 最后一项[]对应票的类型
+                By.XPATH, "//*[@id='app']/div[2]/div[2]/div[2]/div[4]/ul[1]/li[2]/div[normalize-space()='7月21日']")  # 最后一项[]对应票的类型
             ticket.click()
             if ticket.get_attribute('class') == 'selectable-option unable':
                 print("无票")

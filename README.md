@@ -1,6 +1,6 @@
- # comicup29-ticket-buy
+ # Bilibili-ticket-buy
 
-cp29门票购买脚本，支持Bilibili会员购及ALLCPP，修改一下也可以去买别的东西
+会员购门票购买脚本，修改一下也可以去买别的东西
 
 脚本不是很完善，只是为了方便购买，在使用时根据自己需求修改，发现问题可以发isssue或者修复发pr，阿里嘎多~
 
@@ -8,7 +8,9 @@ cp29门票购买脚本，支持Bilibili会员购及ALLCPP，修改一下也可�
 
 ## 如何使用
 
-1. 下载该项目ZIP文件 https://github.com/Hobr/comicup29-ticket-buy （Code->Download ZIP）并解压得到文件夹“comicup29-ticket-buy-main” 双击进入文件夹目录
+//1. 下载该项目ZIP文件 https://github.com/Hobr/comicup29-ticket-buy （Code->Download ZIP）并解压得到文件夹“comicup29-ticket-buy-main” 双击进入文件夹目录
+1. 下载该项目ZIP文件 https://github.com/RUSHHE/Bilibili-ticket-buy （Code->Download ZIP）并解压得到文件夹
+“Bilibili-ticket-buy-BilibiliWorld-2023” 双击进入文件夹目录
 2. 安装Python 打开https://www.python.org/downloads/ ，然后点击黄色按钮下载Python
 3. 安装时选中“Add Python to PATH”紧接着点击“Customize installation”确保勾选所有可选项后 “Next”
 4. 打开终端（Cmd或者Powershell）输入命令 pip config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple & pip install -r requirements.txt
